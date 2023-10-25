@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/slide6" />
+
+        <LinearLayout
+            android:id="@+id/llProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_weight="0.6"
+                android:fontFamily="@font/roboto_regular" />
+
+            <TextView
+                android:id="@+id/adProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acacia Wood"
+                android:textStyle="bold"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llType"
+            app:layout_constraintStart_toStartOf="@+id/llProduct"
+            app:layout_constraintTop_toBottomOf="@+id/llProduct"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Advertisement Type "
+                style="@style/TextAppearance.MaterialComponents.Caption" />
+            <TextView
+                android:id="@+id/adType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BannerAd"
+                android:layout_weight="0.4"
+                style="@style/TextAppearance.MaterialComponents.Caption" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llExpire"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llType"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expires On    "
+                android:layout_weight="0.6"
+                style="@style/TextAppearance.MaterialComponents.Caption" />
+
+            <TextView
+                android:id="@+id/ad_date_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04/04/2021"
+                android:layout_weight="0.4"
+                style="@style/TextAppearance.MaterialComponents.Caption" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

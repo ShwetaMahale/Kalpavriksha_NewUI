@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="">
+
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/update_customer"
+                android:icon="@drawable/sn_updateprofile"
+                android:title="@string/menu_slideshow" />
+
+            <item
+                android:id="@+id/inbox"
+                android:icon="@drawable/sn_recivedenq"
+                android:title="@string/text_enquiry_received" />
+
+            <item
+                android:id="@+id/outbox"
+                android:icon="@drawable/sn_sentenq"
+                android:title="@string/text_enquiry_sent" />
+
+            <item
+                android:id="@+id/favinbox"
+                android:icon="@drawable/sn_chatt"
+                android:title="@string/text_favourite_chat" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/support">
+        <menu>
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/sn_contactus"
+                android:title="@string/contact_us" />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/sn_about"
+                android:title="@string/about" />
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/sn_help"
+                android:title="@string/help" />
+
+            <item
+                android:id="@+id/terms"
+                android:icon="@drawable/sn_term"
+                android:title="@string/txt_termscondition" />
+
+            <item
+                android:id="@+id/refer_friend"
+                android:icon="@drawable/share"
+                android:title="@string/sharenow" />
+
+        </menu>
+    </item>
+    <item android:title="@string/user_logout">
+        <menu>
+            <item
+                android:id="@+id/resetPassword"
+                android:icon="@drawable/resetpass"
+                android:title="@string/text_reset_password"/>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/menulogout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_form_rounded"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_category"
+        android:src="@drawable/ic_close_search"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_grey_border_rounded_corners"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edState"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="9"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/text_search_product"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#838383"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clear_txt_Prise"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/clear_txt"
+                android:tint="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="search"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+
+            android:background="@drawable/red_btn"
+            android:id="@+id/btnSearch" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_button_rounded"
+        android:id="@+id/submit" />
+
+</LinearLayout>

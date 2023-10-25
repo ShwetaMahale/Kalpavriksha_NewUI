@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cdf3fe"
+    tools:context=".LoginRegister.ValidateUserForFirstTime.ValidateOTPActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/MobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Mobile Number"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:padding="4dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"/>
+
+        <EditText
+            android:layout_below="@id/MobileNumber"
+            android:id="@+id/OTP"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="OTP"
+            android:padding="4dp"
+            android:visibility="visible"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"/>
+
+
+        <Button
+            android:id="@+id/getOTP"
+            android:text="Get OTP"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_rounded"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:layout_below="@+id/OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/Verify_OTP"
+            android:text="Verify OTP"
+            android:background="@drawable/bg_button_rounded"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_below="@+id/OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/Resend_OTP"
+            android:text="Resend OTP"
+            android:background="@drawable/bg_button_rounded"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Verify_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Splash.LanguageScreen">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/welcome_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/multi"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#f64c73"
+        android:textStyle="bold"
+        android:text="@string/msg_welcome"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/welcome_banner"
+        app:layout_constraintStart_toStartOf="@id/welcome_banner"
+        app:layout_constraintTop_toBottomOf="@id/welcome_banner" />
+
+    <LinearLayout
+        android:id="@+id/firstrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome">
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_circle_white"
+        android:text="@string/label_btn_english"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+         />
+
+    <Button
+        android:id="@+id/btnKannada"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_btn_kannada"
+        android:background="@drawable/shape_circle_white"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+        <Button
+            android:id="@+id/btnHindi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_btn_hindi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_circle_white"
+            app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="@id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@id/btnKannada" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/comingsoon"
+        android:src="@drawable/comingsoon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="@id/firstrow"
+        app:layout_constraintStart_toStartOf="@id/firstrow"
+        app:layout_constraintTop_toBottomOf="@id/firstrow"
+        android:layout_height="70dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/secondrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/comingsoon"
+        app:layout_constraintStart_toStartOf="@id/comingsoon"
+        app:layout_constraintTop_toBottomOf="@id/comingsoon">
+
+        <Button
+            android:id="@+id/btnMarathi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:enabled="false"
+            android:background="@drawable/shape_circle_white"
+            android:text="@string/label_btn_Telugu"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnGujarathi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:enabled="false"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_btn_Gujarathi"
+            android:background="@drawable/shape_circle_white"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="@id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+        <Button
+            android:id="@+id/btnUrdu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="@string/label_btn_Urdu"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_circle_white"
+            app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="@id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@id/btnKannada" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="@id/secondrow"
+        app:layout_constraintStart_toStartOf="@id/secondrow"
+        app:layout_constraintTop_toBottomOf="@id/secondrow">
+
+        <Button
+            android:id="@+id/btnTamil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:enabled="false"
+            android:background="@drawable/shape_circle_white"
+            android:text="@string/label_btn_Tamil"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btnMalayalam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:enabled="false"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_btn_Malayalam"
+            android:background="@drawable/shape_circle_white"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="@id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+        <Button
+            android:id="@+id/btnmore"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="...."
+            android:background="@drawable/shape_circle_white"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="@id/tvWelcome"
+            app:layout_constraintTop_toBottomOf="@id/btnEnglish" />
+    </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

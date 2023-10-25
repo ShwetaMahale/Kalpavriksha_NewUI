@@ -1,0 +1,38 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeStyle">@style/AppTheme.ActionMode</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--  For Custom Action Mode Background Color/Drawable -->
+        <item name="actionModeBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoActionBar_new">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--  For Custom Action Mode Background Color/Drawable -->
+        <item name="actionModeBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoActionBarRed">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/red</item>
+    </style>
+
+</resources>

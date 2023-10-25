@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:gravity="start"
+        android:minHeight="@dimen/_35sdp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/dealerName"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Name" />
+
+        <TextView
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/dealercity"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="" />
+        <TextView
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/dealerBusiness"
+            android:text=""
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/radio_selector_switch"
+            android:layout_weight="0.1"
+            android:id="@+id/checkedDealer" />
+        <ImageButton
+            android:id="@+id/btn_delete_unit"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:background="@null"
+            android:tint="@color/gray"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+</LinearLayout>

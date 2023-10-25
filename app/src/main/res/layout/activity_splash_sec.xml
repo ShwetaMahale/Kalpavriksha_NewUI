@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_gravity="center"
+       android:layout_marginTop="@dimen/_42ssp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/login_logo"
+        android:textColor="@color/bg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/txt_signup"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_18ssp" />
+
+    <Button
+        android:id="@+id/btn_google_login"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/sign_up_btn"
+        android:backgroundTint="#EBEBEB"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/txt_googlelogin"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/google_icom"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/_14ssp" />
+
+    <Button
+        android:id="@+id/btn_facebook_login"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/sign_up_btn"
+        android:backgroundTint="#3B5998"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/txt_facebooklogin"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/meta_icon"
+        android:drawableTint="@color/white"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="OR"
+            android:textColor="#858597"
+            android:textSize="@dimen/_13ssp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/sign_up_btn"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/txt_register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+</ScrollView>

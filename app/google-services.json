@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193564739397",
+    "project_id": "kalpavriksha-dev",
+    "storage_bucket": "kalpavriksha-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193564739397:android:afc998ffbb1af4df54a02c",
+        "android_client_info": {
+          "package_name": "com.mwbtech.dealer_register"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193564739397-k2n603v31knoe76qnq571n4e4c6stl28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRxY0Ds3dEY3fLuRsaaUeqOdfobQITOCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193564739397-k2n603v31knoe76qnq571n4e4c6stl28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

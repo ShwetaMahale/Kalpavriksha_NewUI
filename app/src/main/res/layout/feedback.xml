@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:paddingTop="17dp"
+        android:paddingBottom="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:padding="5dp"
+            android:src="@drawable/back_white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/back"
+            android:layout_weight="1"
+            android:text="@string/contact_us"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/attachment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:padding="2dp"
+            android:src="@drawable/contactattach" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/whatsapp_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="2dp"
+            android:src="@drawable/whats_app" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-17dp"
+        app:cardCornerRadius="24dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="22dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="Subject"
+                        android:textColor="@color/textLightGrey"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt1"
+                        android:layout_gravity="start"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_dr_profile"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <Spinner
+                            android:id="@+id/subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="0.7"
+
+                            android:hint="@string/sub" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/subjectLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginTop="8dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="22dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Message"
+                            android:textColor="@color/textLightGrey"
+                            android:textSize="16sp" />
+
+                        <ScrollView
+                            android:id="@+id/scrollview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/black"
+                                app:counterEnabled="true"
+                                app:counterMaxLength="250"
+                                app:counterOverflowTextAppearance="@style/TextLimitError"
+                                app:counterTextAppearance="@style/TextLimitStyle">
+
+                                <EditText
+                                    android:id="@+id/et_message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp"
+                                    android:layout_below="@id/txt2"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@drawable/edit_dr_profile"
+                                    android:gravity="top"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:maxLength="250"
+                                    android:padding="8dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/attactImg"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_below="@id/linearLayout"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/productLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/subcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_dr_profile"
+                        android:clickable="false"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:hint="Select Subcategory"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/EnterSubCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/subcategory"
+                        android:background="@drawable/edit_dr_profile"
+                        android:hint="Enter Subcategory Name"
+                        android:maxLength="150"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/childcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/EnterSubCat"
+                        android:background="@drawable/edit_dr_profile"
+                        android:clickable="false"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Select Childcategory"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/EnterChildCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/childcategory"
+                        android:background="@drawable/edit_dr_profile"
+                        android:hint="Enter Child Category Name"
+                        android:maxLength="150"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/productname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/EnterChildCat"
+                        android:background="@drawable/edit_dr_profile"
+                        android:hint="Enter Product name"
+                        android:maxLength="150"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/productname"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/imageFront1"
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/edit_dr_profile"
+                                android:src="@drawable/plus" />
+
+                            <ImageView
+                                android:id="@+id/imageFront2"
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/edit_dr_profile"
+                                android:src="@drawable/plus" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/send_email"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/red_btn"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_us_kalpavriksha_support_wbtechindia_com"
+
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/support"
+
+                    android:text="@string/support_msg"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

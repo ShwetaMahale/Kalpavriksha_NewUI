@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/information"
+        android:icon="@drawable/info1"
+        appcompat:showAsAction="always"
+        android:title="info"/>
+
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/ph"
+        appcompat:showAsAction="always"
+        android:title="call"/>
+
+</menu>

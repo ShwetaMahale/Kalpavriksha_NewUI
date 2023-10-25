@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+    <queries>
+        <package android:name="com.facebook.katana" />
+        <!-- allows app to access Facebook app features -->
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+        <!-- allows sharing to Messenger app -->
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" />
+    </queries>
+
+    <application
+        android:name=".internet_connection.MyInternetCheck"
+        android:icon="@drawable/login"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/login"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Splash.SplashScreenforSec"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Splash.LanguageScreen"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LoginRegister.ValidateUserForFirstTime.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginRegister.OtpVerificationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Splash.Splash_Sec_Activity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Profile.BillingDetails.OnFirstRegistration"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Wallet.Wallet_Main_Screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister.TakeTourActivity"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.ThankyouScreen"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".LoginRegister.TermsCond"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.AdDevelopment"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Support.Pdfhelp"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Support.BusinessNewsListActivity"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Support.BusinessNewsActivity"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.Payment"
+            android:label="Payment Gateway"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.NotificationsTabs.MainNotificationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".LoginRegister.VerifyPhone"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar_new" />
+        <activity
+            android:name=".LoginRegister.ContinueWithPhone"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar_new" />
+        <activity
+            android:name=".LoginRegister.ForgotPassFirst"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Dashboard.Advertisement.ReceiveAd.AdSendRequirementActivity" />
+        <activity
+            android:name=".Splash.SplashScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mwbtech.dealer_register.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <receiver
+            android:name=".LoginRegister.OTPRetriver.SMSReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LoginRegister.ValidateUserForFirstTime.ValidateOTPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister.ValidateUserForFirstTime.QuestionAnswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.Support.HelpVideoPlayerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister.ValidateUserForFirstTime.FingerprintValidate"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.Enquiry.EnquiryRequirementActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".LoginRegister.ForgotPassword"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Profile.ProfileMain.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile.ProfileMain.UpdateMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginRegister.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- *************Broadcast receiver for Checking Internet connection*********** -->
+        <receiver
+            android:name=".internet_connection.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- ******************FIle Provider for Camera and Gallery******************* -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity
+            android:name=".Dashboard.Support.FeedbackActivity"
+            android:label="Contact Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dashboard.Support.AboutUs"
+            android:label="About Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.EnquiryReceived.EnquiryReceivedActivity"
+            android:label="Inbox"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.EnquirySent.EnquirySentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.EnquirySent.EnquirySentListDealerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.EnquirySent.EnquirySentChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Enquiry.SendEnquiryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Splash.WelcomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.EnquiryReceived.EnquiryReceivedChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.FavouriteChat.FavChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.FavouriteChat.FavChatInboxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Support.HelpVideoListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:label="Help"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Support.TermsConditionActivity"
+            android:label="Terms and Conditions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.AdvertisementMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Dashboard.Advertisement.MyAd.ShowAdsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.QuoteAd.UploadImageForAdActivity"
+            android:label="Advertisement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.QuoteAd.EstimationPriceActivity"
+            android:label="Advertisement Summary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.AdRequestDetails.AdRequestDetailsActivity"
+            android:label="Advertisement Enquiry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.OnetoOne.OnetoOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.ReceiveAd.ReceivedAdvertisementActivity"
+            android:label="Received Advertisement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.SentAd.SentAdvertisementActivity"
+            android:label="Live Advertisements"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarRed" />
+        <activity
+            android:name=".Dashboard.Advertisement.QuoteAd.AddRequestUserActivity"
+            android:label="Book Your Advertisement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.Advertisement.MyAd.AdDetailsActivity"
+            android:label="Advertisement Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard.ResetPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile.BillingDetails.googlemap"
+            android:exported="true"
+            android:label="Google Map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile.BillingDetails.BillingAddressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="Instantiatable" />
+
+        <service
+            android:name=".Dashboard.FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- android:value="AIzaSyAUfqSzJjBrsEAMBcIrR7diRRQoPOvkshM"/> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider899384901197643"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:id="@+id/img_previous_banner"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_previous_banner" />
+
+    <ImageView
+        android:id="@+id/img_next_banner"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_next_banner"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:id="@+id/ll_page_indicator_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/vp_carousel"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"/>
+
+</merge>

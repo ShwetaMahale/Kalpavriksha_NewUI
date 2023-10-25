@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_280sdp"
+            android:background="@drawable/cng_bg_2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/rolling_video_icon"
+                android:layout_height="@dimen/_120sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/would_you_like_to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <Button
+                android:id="@+id/take_tour_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_rectangle_red_circular_corners"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/continue_use"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+            <!--  <Button
+                  android:id="@+id/ctn_button"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_40sdp"
+                  android:layout_marginEnd="@dimen/_40sdp"
+                  android:layout_marginBottom="50dp"
+                  android:background="@drawable/shape_rectangle_red_circular_corners"
+                  android:gravity="center"
+                  android:textColor="@color/white"
+                  android:padding="@dimen/_10sdp"
+                  android:text="Continue"
+                  android:textAllCaps="false" />-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ctn_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:text="@string/skip_btn"
+                android:textColor="@color/red" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height=".7dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="@color/red" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</layout>

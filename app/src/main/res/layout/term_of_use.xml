@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:background="@drawable/bg_form_rounded"
+    android:layout_height="480dp">
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/cancel"
+        android:src="@drawable/multiply"
+        android:layout_gravity="right"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@color/white"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Term of use"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="AGREEMENT TO TERMS"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="INTELLECTUAL PROPERTY RIGHTS"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="USER REPRESENTATIONS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="USER REGISTRATION"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="PROHIBITED ACTIVITIES"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="USER GENERATED CONTRIBUTIONS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt6"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="CONTRIBUTION LICENSE"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt7"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="GUIDELINES FOR REVIEWS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt8"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="SUBMISSIONS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt9"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="APP MANAGEMENT"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt10"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="PRIVACY POLICY"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt11"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="DATA COPY RIGHT POLICY"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt27"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="COPYRIGHT INFRINGEMENTS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt12"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="TERM AND TERMINATION"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt13"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="JURISDICTION, GOVERNING LAWS, AND DISPUTE RESOLUTION"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt14"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MODIFICATIONS AND INTERRUPTIONS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt15"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="GOVERNING LAW"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt16"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="DISPUTE RESOLUTION"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt17"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="CORRECTIONS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt18"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="DISCLAIMER"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt19"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="LIMITATIONS OF LIABILITY"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt20"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="INDEMNIFICATION"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt21"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="USER DATA"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt22"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="USER DATAELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt23"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MISCELLANEOUS"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt24"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="CONTACT US"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt25"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt26"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_rounded"
+                android:id="@+id/okay"
+                android:text="Okay"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

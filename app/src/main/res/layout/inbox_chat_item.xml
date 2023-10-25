@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rec_reltive"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/white"
+        android:layout_margin="4dp"
+        android:padding="4dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.5dp" />
+
+        <TextView
+            android:id="@+id/textNotify"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/notification_circle"
+            android:gravity="center_horizontal"
+            android:minHeight="20dip"
+            android:minWidth="20dip"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:weightSum="1"
+            android:layout_toEndOf="@id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chat_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_weight="0.3"
+                android:text=" "
+                style="@style/Caption"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/chat_date_txt"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=" "
+                android:textSize="@dimen/_8ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/header_layout1"
+            android:layout_below="@+id/header_layout"
+            android:layout_toEndOf="@id/icon"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/chat_child_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_8ssp" />
+                <TextView
+                    android:id="@+id/chat_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="1dp"
+                    android:text=""
+                    android:textColor="#7A7D7D"
+                    android:textSize="@dimen/_8ssp" />
+
+                <TextView
+                    android:id="@+id/chat_city"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=" "
+                    android:textColor="#7A7D7D"
+                    android:textSize="@dimen/_8ssp" />
+                <TextView
+                    android:id="@+id/Enq_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=" "
+                    android:textColor="#7A7D7D"
+                    android:textSize="@dimen/_8ssp" />
+                <TextView
+                    android:id="@+id/enq_type"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=" "
+                    android:textColor="#7A7D7D"
+                    android:textSize="@dimen/_8ssp" />
+                <TextView
+                    android:id="@+id/trans_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=" "
+                    android:textColor="#7A7D7D"
+                    android:textSize="@dimen/_8ssp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/star"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:src="@drawable/selected_star" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/header_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/colorLightGray"
+            android:layout_toEndOf="@+id/icon" />
+    </RelativeLayout>
+</FrameLayout>

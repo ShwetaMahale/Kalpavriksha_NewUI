@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/wallet"
+        android:orderInCategory="100"
+        android:icon="@drawable/iconwallet"
+        android:title="@string/share"
+        android:enabled="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/notification"
+        android:orderInCategory="100"
+        android:title="Notification"
+        android:enabled="true"
+        app:actionLayout="@layout/custom_notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:icon="@drawable/share"
+        android:title="@string/share"
+        android:enabled="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/out"
+        android:orderInCategory="100"
+        android:icon="@drawable/signout"
+        android:title="@string/logout"
+        android:enabled="true"
+        app:showAsAction="always" />
+
+</menu>

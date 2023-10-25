@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/edit_box"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spinner_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/txt_businesstype"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_1sdp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:prompt="@string/txt_businesstype"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/down_ic" />
+    </RelativeLayout>
+<!--
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_dr_profile"
+        android:clickable="false"
+        android:visibility="gone"
+        android:focusable="true"
+        android:gravity="start"
+        android:hint="Select Category" />
+-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="Please Search By Name/City Name"
+        android:textColor="@color/text_light"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_dr_profile"
+        android:clickable="false"
+        android:drawableLeft="@drawable/red_search_ic"
+        android:drawablePadding="10dp"
+        android:hint="@string/txt_searchbynamecity"
+        android:iconifiedByDefault="false"
+        android:maxLines="1"
+        android:textSize="@dimen/_11ssp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Total "
+            android:textColor="@color/text_light"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNumberDealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_dr_profile"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Select All"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_weight="0.1"
+            android:button="@drawable/radio_selector_switch"
+            android:text=""
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_delete_all"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/login_btn"
+        android:text="Delete All"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_delete_all"
+        android:layout_marginHorizontal="22dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_dr_profile"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Delete All"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/deleteall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_weight="0.1"
+            android:button="@drawable/radio_selector_switch"
+            android:text=""
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:paddingVertical="7dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:text="@string/text_name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:text="@string/text_city_names"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/typeHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:text="@string/txt_businesstype"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- <TextView
+             android:textSize="16sp"
+             android:textStyle="bold"
+             android:layout_width="0dp"
+             android:textColor="@color/white"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.0"
+             android:text="" />
+
+         <TextView
+             android:textSize="16sp"
+             android:textStyle="bold"
+             android:layout_width="0dp"
+             android:textColor="@color/white"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.1"
+             android:text="" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="@string/txt_nodata"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

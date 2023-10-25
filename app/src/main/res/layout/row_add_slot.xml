@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/linearduration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/edit_box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:singleLine="true"
+                android:text="Advertisement Duration"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_remove"
+                android:layout_weight="0.1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_close_search"
+                app:tint="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/rlDate"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_from_date"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/edit_box"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="From Date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_from"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/ed_from_date"
+                    android:layout_alignEnd="@+id/ed_from_date"
+                    app:srcCompat="@drawable/cal" />
+
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/ed_from_date" />
+
+                <EditText
+                    android:id="@+id/ed_to_date"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/txt11"
+                    android:background="@drawable/edit_box"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="To Date"
+                    android:imeOptions="actionDone"
+                    android:inputType="date"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_to"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_alignTop="@+id/ed_to_date"
+                    android:layout_alignEnd="@+id/ed_to_date"
+                    app:srcCompat="@drawable/cal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Enter number of intervals per hour" />
+
+                <EditText
+                    android:id="@+id/ed_ad"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@+id/txt"
+                    android:background="@drawable/edit_box"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_ad_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down_ic" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/sign_up_btn"
+                android:drawableEnd="@drawable/ic_add"
+                android:text="Add" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

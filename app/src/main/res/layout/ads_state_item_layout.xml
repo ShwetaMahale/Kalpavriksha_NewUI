@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_form_rounded"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cancel_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_rectangle_grey_border_rounded_corners"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edState"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="9"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/text_state"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#838383"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clear_txt_Prise"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/clear_txt"
+                android:tint="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/btn_state_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="0.7"
+            android:background="@drawable/sign_up_btn"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:paddingTop="17dp"
+        android:paddingBottom="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:padding="5dp"
+            android:src="@drawable/back_white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/back"
+            android:text="@string/advertise_with_us"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-17dp"
+        app:cardCornerRadius="24dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_margin="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Advertise With us"
+                    android:visibility="gone" />-->
+
+
+                <!-- <androidx.cardview.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="20dp"
+                     android:layout_marginTop="15dp"
+                     app:cardCornerRadius="15dp"
+                     app:cardPreventCornerOverlap="true">-->
+
+                <!--<net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    gl:end_color="@color/gradientOrange"
+                    gl:start_color="@color/gradientLightYellow">-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardBookAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_book_your_advertisement"
+                    android:minHeight="100dp"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewSub2Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="@string/text_book_your_advertisement"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/textViewSub2Title"
+                        android:text="@string/text_get_estimate_for_your_advertisements"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewSub2Title" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/text_book_your_advertisement"
+                        android:src="@drawable/ic_play"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--                    </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                <!--                </androidx.cardview.widget.CardView>-->
+                <!--
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_marginTop="10dp"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardPreventCornerOverlap="true">
+
+                                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:minHeight="100dp"
+                                        android:padding="10dp"
+                                        gl:end_color="@color/gradientLightBlue"
+                                        gl:start_color="@color/gradientViolet">
+                -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_my_advertisement"
+                    android:minHeight="100dp"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewSub"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="@string/text_my_advertisement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub"
+                        android:text="@string/text_all_my_advertisements"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewSub" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/text_my_advertisement"
+                        android:src="@drawable/ic_play"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--                    </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                <!--                </androidx.cardview.widget.CardView>-->
+
+                <!--
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_marginTop="10dp"
+                                    app:cardCornerRadius="15dp"
+                                    app:cardPreventCornerOverlap="true">
+
+                                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:minHeight="100dp"
+                                        android:padding="10dp"
+                                        gl:end_color="@color/gradientLightYellow2"
+                                        gl:start_color="@color/gradientLightOrange2">
+                -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardSentAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_my_live_advertisement"
+                    android:minHeight="100dp"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewSub3Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="@string/text_my_live_advertisement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:text="@string/text_current_aired_advertisements"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewSub3Title" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:contentDescription="@string/text_my_live_advertisement"
+                        android:src="@drawable/ic_play"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--                    </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                <!--                </androidx.cardview.widget.CardView>-->
+                <!--
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="14dp"
+                                    app:cardPreventCornerOverlap="true">
+
+                                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        gl:end_color="@color/gradientLightBlue"
+                                        gl:start_color="@color/gradientLightGreen">
+                -->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardReceivedAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_live_advertisement"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/textViewSub4Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="@string/text_live_advertisement"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_live_ad_sub_title"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:text="@string/text_advertisements_related_to_registered_category"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewSub4Title" />
+
+                    <ImageView
+                        android:id="@+id/img_live_ad_play"
+                        style="@style/homeCardImage"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/text_live_advertisement"
+                        android:src="@drawable/ic_play"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--                    </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+                <!--                </androidx.cardview.widget.CardView>-->
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dashboard.Advertisement.AdvertisementMenuActivity">
+
+
+        <RelativeLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listmenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->

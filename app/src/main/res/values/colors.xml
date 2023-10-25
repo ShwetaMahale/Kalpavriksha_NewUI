@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- <color name="colorPrimary">#FFEBEE</color>
+    <color name="colorPrimaryDark">#017294</color> 08439E-->
+
+    <color name="colorPrimary">#f64c73</color>
+    <color name="colorPrimarylightt">#fcd2dc</color>
+    <color name="background_color">#F2F1F1</color>
+    <color name="colorPrimarylight">#F87D99</color>
+    <color name="colorPrimaryDark">#DD0738</color>
+    <color name="colorAccent">#FF7777</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#B9B9B9</color>
+    <color name="button">@color/colorPrimary</color>
+    <color name="underline">#f64c73</color>
+    <color name="gray_light">#DADADA</color>
+    <color name="gray_dark">#7D848D</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#EFEFEF</color>
+
+    <color name="filter_color">#f98da5</color>
+
+    <color name="button1">#E0DDDD</color>
+    <color name="black">#000000</color>
+    <color name="bg">#F7F6F6</color>
+    <color name="bg_selected_item">#E0DDDD</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#DD0738</color>
+
+    <!-- dots active colors -->
+
+
+    <color name="accent">#607D8B</color>
+
+
+    <color name="colorLightGray">#f1f1f1</color>
+    <color name="colorCaption">#000</color>
+
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="miniTitleColor">#6F6A6A</color>
+
+    <!--gradient colors-->
+    <color name="red">#EF5353</color>
+    <color name="red_dim">#FC8279</color>
+
+    <color name="otpViewBorderColor">#B8B8D2</color>
+    <color name="textLightGrey">#858597</color>
+    <color name="shapeBgLightGrey">#F7F7F9</color>
+    <color name="edTxtBgLightGrey">#EFEFEF</color>
+    <color name="graph_start">#FFD0C7</color>
+    <color name="graph_end">#F14A52</color>
+ <color name="text_light">#959292</color>
+</resources>
+

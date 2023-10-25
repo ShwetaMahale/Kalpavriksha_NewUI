@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="50dp"
+    android:gravity="center"
+    android:ellipsize="end"
+    android:textAllCaps="false"
+    android:layout_height="@dimen/_30sdp"
+    android:textSize="@dimen/_11ssp"
+    android:textColor="@color/white"
+    android:background="@drawable/shape_bg_red_dim"
+    style="?android:attr/buttonBarButtonStyle" />
+
+
+</layout>

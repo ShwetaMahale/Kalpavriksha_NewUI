@@ -1,0 +1,121 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeStyle">@style/AppTheme.ActionMode</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.NoActionBarRed">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/red</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar_new">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- <style name="ImagePickerTheme" parent="ef_BaseTheme">
+         <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/colorAccent</item>
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>-->
+    <style name="TextLimitStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/textLightGrey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextLimitError" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/dot_dark_screen1</item>
+    </style>
+
+    <style name="AppTheme.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="android:backgroundSplit">?android:attr/actionModeSplitBackground</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+    </style>
+    <style name="Caption">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorCaption</item>
+    </style>
+
+    <!--styles for education app-->
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent.headerText.contentText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/miniTitleColor</item>
+    </style>
+
+    <style name="homeCardImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="TextLabel">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_30sdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_30sdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_30sdp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_30sdp</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item> // Activated State
+        <item name="colorOnSurface">@color/colorPrimary</item> // Normal State
+    </style>
+
+    <style name="viewParent.headerText.homeCardContent" parent="viewParent.headerText.contentText">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="viewParent.headerText.HomeCardTitle">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+</resources>

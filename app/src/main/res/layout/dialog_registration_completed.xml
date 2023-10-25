@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/cong_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_210sdp"
+            app:layout_constraintBottom_toTopOf="@id/succTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/app_name"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:id="@+id/img_congratulations"
+            android:paddingEnd="@dimen/_20sdp"
+            android:src="@drawable/icon_congratulations" />
+
+        <TextView
+            android:id="@+id/succTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/img_congratulations"
+            app:layout_constraintBottom_toTopOf="@id/tv_buyer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/text_registration_completed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/succTv"
+            app:layout_constraintBottom_toTopOf="@id/layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/text_buyer"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16ssp" />
+        <Button
+            android:id="@+id/ctn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/succTv"
+            app:layout_constraintBottom_toTopOf="@id/layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_rectangle_red_circular_corners"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/text_continue_as_buyer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_buyer"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_26sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp" >
+
+            <Button
+                android:id="@+id/kyc_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/shape_rectangle_red_circular_corners"
+                android:backgroundTint="@color/colorPrimarylight"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/text_to_register_as_seller_n_proceed_with_kyc"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <Button
+                android:id="@+id/professional_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/colorPrimarylight"
+                android:background="@drawable/shape_rectangle_red_circular_corners"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:layout_weight="0.5"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/text_to_register_as_professional_n_proceed_with_kyc"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

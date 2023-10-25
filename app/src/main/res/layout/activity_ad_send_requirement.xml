@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.Advertisement.ReceiveAd.AdSendRequirementActivity">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="Enquiry about Advertisement"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_selected_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:clickable="false"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start"
+            android:hint="Product Name"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/selected_Customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:clickable="false"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="start"
+            android:hint="Customer name"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="0dp"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:text="Please Select Business Type"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ListView
+                    android:id="@+id/listBusines"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Please Select City of Business(Where you want the product)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/select_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edit_box"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="start"
+                    android:hint="Select State"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_select_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edit_box"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="start"
+                    android:hint="Select City"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearBusinessProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:text="Professionals Requirement"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ListView
+                    android:id="@+id/listProfDemand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBusinessDemand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_weight="0.5"
+                android:singleLine="true"
+                android:text="Business Demand(Approximately)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ListView
+                    android:id="@+id/listBusinesDemand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearnedd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="start"
+                android:text=" Why do you need this (Select only one)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/ckId5"
+                    android:layout_width="12dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.1"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/item_name5"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.9"
+                    android:text="Trading"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/ckId6"
+                    android:layout_width="12dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.1"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/item_name6"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.9"
+                    android:text="Self Use"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/ckId4"
+                    android:layout_width="12dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.1"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/item_name4"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.9"
+                    android:text="Business Use"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Brief about your Requirement"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="250"
+                android:textColorHint="@color/black"
+                app:counterOverflowTextAppearance="@style/TextLimitError"
+                app:counterTextAppearance="@style/TextLimitStyle"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/open_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:background="@drawable/edit_box"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="250" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/photoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="Please select picture from Gallery/camera"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/imag1"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_box"
+                    android:src="@drawable/photo_camera"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/imag2"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_box"
+                    android:src="@drawable/photo_camera"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="Submit"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+</ScrollView>
