@@ -211,7 +211,7 @@
     <string name="lbl_0">0</string>
     <string name="contact_us">सम्पर्क करें</string>
     <string name="dont_have_an_account">खाता नहीं है?</string>
-    <string name="would_you_like_to">क्या आप ऐप का फेरफटका लेना चाहेंगे?</string>
+    <string name="would_you_like_to">"क्या आप ऐप का टूर लेना चाहेंगे?"</string>
     <string name="continue_use">जारी रखें</string>
     <string name="user_logout">उपयोगकर्ता लॉगआउट</string>
     <string name="support">सहायता</string>
